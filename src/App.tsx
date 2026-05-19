@@ -1,5 +1,7 @@
+import { StyleGuide } from './components/StyleGuide/StyleGuide'
+
 export function App() {
-  return null
+  return <StyleGuide />
 }
 
 export default App

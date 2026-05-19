@@ -1,11 +1,4 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
+@import './styles/_fonts.css';
+@import './styles/_variables.css';
+@import './styles/_breakpoints.css';
+@import './styles/_base.css';
