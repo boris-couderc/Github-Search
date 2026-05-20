@@ -1,16 +1,17 @@
 import { Header } from "./components/Header/Header";
 import { SearchBar } from "./features/search/components/SearchBar/SearchBar";
-import { StyleGuide } from "./components/StyleGuide/StyleGuide";
+import { SearchView } from "./features/search/components/SearchView/SearchView";
+import { SearchProvider } from "./features/search/context";
 
 export function App() {
   return (
-    <>
+    <SearchProvider>
       <Header />
       <SearchBar />
       <main>
-        <StyleGuide />
+        <SearchView />
       </main>
-    </>
+    </SearchProvider>
   );
 }
 
