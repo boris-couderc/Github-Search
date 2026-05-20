@@ -13,7 +13,7 @@ export function reducer(
 ): SearchState {
   switch (action.type) {
     case "SET_QUERY":
-      return { ...initialState, query: action.payload };
+      return { ...initialState, query: action.payload.trim() };
     case "FETCH_START":
       return { ...state, status: "loading" };
     case "FETCH_SUCCESS":

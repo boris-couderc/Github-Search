@@ -10,7 +10,7 @@ export function useGithubSearch(): void {
   const abortRef = useRef<AbortController | null>(null);
 
   useEffect(() => {
-    if (!query.trim()) return;
+    if (!query) return;
 
     const timer = setTimeout(async () => {
       abortRef.current?.abort();

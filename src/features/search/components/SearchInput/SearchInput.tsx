@@ -9,7 +9,7 @@ type Props = {
 
 export function SearchInput({ value, onChange, loading }: Props) {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.searchInput}>
       <Icon name="icon-search" className={styles.iconSearch} />
       <input
         type="search"
