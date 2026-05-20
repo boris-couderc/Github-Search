@@ -7,6 +7,8 @@ type Props = {
   className?: string;
   title?: string;
   "aria-hidden"?: boolean;
+  "aria-label"?: string;
+  role?: string;
 };
 
 export function Icon({
@@ -14,12 +16,15 @@ export function Icon({
   className,
   title,
   "aria-hidden": ariaHidden = true,
+  "aria-label": ariaLabel,
+  role,
 }: Props) {
   return (
     <svg
       className={cx(styles.icon, className)}
       aria-hidden={ariaHidden}
-      role={title ? "img" : undefined}
+      aria-label={ariaLabel}
+      role={role ?? (title ? "img" : undefined)}
     >
       {title && <title>{title}</title>}
       <use href={`/icons.svg#${name}`} />

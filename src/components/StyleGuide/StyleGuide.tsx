@@ -77,6 +77,7 @@ export function StyleGuide() {
               { name: "icon-check-box-indeterminate", label: "indeterminate" },
               { name: "icon-add", label: "select-all" },
               { name: "icon-loader", label: "loader" },
+              { name: "icon-search", label: "search" },
             ] as const
           ).map(({ name, label }) => (
             <div key={name} className={styles.iconItem}>

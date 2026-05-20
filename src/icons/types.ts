@@ -5,4 +5,5 @@ export type IconName =
   | "icon-check-box-unchecked"
   | "icon-check-box-indeterminate"
   | "icon-delete"
-  | "icon-add";
+  | "icon-add"
+  | "icon-search";
