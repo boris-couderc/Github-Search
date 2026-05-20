@@ -10,13 +10,26 @@ html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
 }
 
 body {
   font-family: var(--font-sans);
   font-weight: var(--font-weight-medium);
   color: var(--color-text);
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-subtle);
+}
+
+main {
+  padding: var(--space-4);
+
+  @media (--from-md) {
+    padding: var(--space-6);
+  }
+
+  @media (--from-xl) {
+    padding: var(--space-12);
+  }
 }
 
 img {
