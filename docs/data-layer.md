@@ -2,6 +2,10 @@
 
 This document covers the files added in the data-layer change: types, reducer, API, context, hooks, and the first orchestrator component.
 
+## Results limit
+
+The API call intentionally loads the first 30 results for this test. A pagination system or a "Load more" button fetching the next page could be added without changing the reducer shape: `FETCH_SUCCESS` would append to `results` instead of replacing them, and a `page` counter would be added to `SearchState`.
+
 ## With external libraries
 
 On a project without the no-external-library constraint, I would have used:

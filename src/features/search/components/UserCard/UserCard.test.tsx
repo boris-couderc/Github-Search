@@ -20,7 +20,7 @@ describe("UserCard", () => {
 
   it("links to GitHub profile in a new tab", () => {
     render(<UserCard user={user} />);
-    const link = screen.getByRole("link", { name: "Voir le profil" });
+    const link = screen.getByRole("link", { name: "View profile" });
     expect(link).toHaveAttribute("href", user.html_url);
     expect(link).toHaveAttribute("target", "_blank");
   });

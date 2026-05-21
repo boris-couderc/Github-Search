@@ -6,4 +6,6 @@ export type IconName =
   | "icon-check-box-indeterminate"
   | "icon-delete"
   | "icon-add"
-  | "icon-search";
+  | "icon-search"
+  | "icon-create"
+  | "icon-clear";

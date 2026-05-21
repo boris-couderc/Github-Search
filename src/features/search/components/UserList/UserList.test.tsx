@@ -1,4 +1,5 @@
 import { render, screen } from "@testing-library/react";
+import { SearchProvider } from "@/features/search/context";
 import { UserList } from "./UserList";
 import type { GitHubUser } from "@/features/search/types";
 
@@ -19,7 +20,11 @@ const users: GitHubUser[] = [
 
 describe("UserList", () => {
   it("renders one card per result", () => {
-    render(<UserList results={users} />);
+    render(
+      <SearchProvider>
+        <UserList results={users} />
+      </SearchProvider>,
+    );
     expect(screen.getByRole("img", { name: "torvalds" })).toBeInTheDocument();
     expect(screen.getByRole("img", { name: "gvanrossum" })).toBeInTheDocument();
   });

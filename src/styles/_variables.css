@@ -4,15 +4,14 @@
 
   /* Button states */
   --btn-primary-bg: #9933ff;
-  --btn-primary-bg-hover: #8800ff;
-  --btn-primary-bg-active: #7700e0;
+  --btn-primary-bg-hover: #8a27ee;
 
   --btn-outline-border: #9933ff;
-  --btn-outline-border-hover: #8800ff;
+  --btn-outline-bg-hover: #f3eafb;
   --btn-outline-color: #9933ff;
 
-  --btn-ghost-bg: var(--color-bg-subtle);
-  --btn-ghost-bg-hover: var(--color-border);
+  --btn-ghost-bg: #f6f8fa;
+  --btn-ghost-bg-hover: #eef0f2;
   --btn-ghost-color: var(--color-text);
 
   --btn-danger-color: #cf222e;

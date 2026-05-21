@@ -1,14 +1,16 @@
 @import "@/styles/_breakpoints.css";
 
 .header {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: var(--space-16);
   background-color: var(--color-text);
   padding-inline: var(--space-4);
 
   @media (--from-md) {
+    justify-content: center;
     padding-inline: var(--space-6);
   }
 
@@ -21,4 +23,22 @@
   font-size: 20px;
   font-weight: var(--font-weight-semibold);
   color: var(--color-bg);
+  margin-left: var(--space-2);
+
+  @media (--from-md) {
+    margin-left: 0;
+  }
+}
+
+.actions {
+  position: absolute;
+  right: var(--space-4);
+
+  @media (--from-md) {
+    right: var(--space-6);
+  }
+
+  @media (--from-xl) {
+    right: var(--space-12);
+  }
 }

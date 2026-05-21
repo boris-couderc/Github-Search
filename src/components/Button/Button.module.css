@@ -9,49 +9,47 @@
   font-size: 14px;
   font-weight: var(--font-weight-semibold);
   border: 1px solid transparent;
-  transition: background 0.15s, border-color 0.15s, color 0.15s;
+  transition:
+    background 0.15s,
+    border-color 0.15s,
+    color 0.15s;
 }
 
 .primary {
   background: var(--btn-primary-bg);
   color: #fff;
-}
 
-.primary:hover {
-  background: var(--btn-primary-bg-hover);
-}
-
-.primary:active {
-  background: var(--btn-primary-bg-active);
+  &:hover {
+    background: var(--btn-primary-bg-hover);
+  }
 }
 
 .outline {
   background: transparent;
   color: var(--btn-outline-color);
   border-color: var(--btn-outline-border);
-}
 
-.outline:hover {
-  border-color: var(--btn-outline-border-hover);
-  color: var(--btn-outline-border-hover);
+  &:hover {
+    background: var(--btn-outline-bg-hover);
+  }
 }
 
 .ghost {
   background: var(--btn-ghost-bg);
   color: var(--btn-ghost-color);
   border-color: var(--color-border);
-}
 
-.ghost:hover {
-  background: var(--btn-ghost-bg-hover);
+  &:hover {
+    background: var(--btn-ghost-bg-hover);
+  }
 }
 
 .danger {
   background: transparent;
   color: var(--btn-danger-color);
   border-color: var(--btn-danger-border);
-}
 
-.danger:hover {
-  background: var(--btn-danger-bg-hover);
+  &:hover {
+    background: var(--btn-danger-bg-hover);
+  }
 }
