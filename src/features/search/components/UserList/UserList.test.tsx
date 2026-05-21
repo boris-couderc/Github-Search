@@ -1,17 +1,19 @@
 import { render, screen } from "@testing-library/react";
 import { SearchProvider } from "@/features/search/context";
 import { UserList } from "./UserList";
-import type { GitHubUser } from "@/features/search/types";
+import type { ResultItem } from "@/features/search/types";
 
-const users: GitHubUser[] = [
+const users: ResultItem[] = [
   {
     id: 1,
+    _key: 1,
     login: "torvalds",
     avatar_url: "https://example.com/1.jpg",
     html_url: "https://github.com/torvalds",
   },
   {
     id: 2,
+    _key: 2,
     login: "gvanrossum",
     avatar_url: "https://example.com/2.jpg",
     html_url: "https://github.com/gvanrossum",
