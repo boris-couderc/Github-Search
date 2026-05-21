@@ -2,6 +2,8 @@
 
 A React app to search GitHub users by username, browse results, and manage a list with an edit mode (select, duplicate, delete).
 
+**Live:** [github-search-eight-dusky.vercel.app](https://github-search-eight-dusky.vercel.app)
+
 ## Stack
 
 - React 19, TypeScript, Vite
